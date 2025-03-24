@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 export const useCartStore = defineStore('cart', {
     // State 
     state: () => ({
-        refreshKey: 0,  // Comme la valeur change, le compute qui contient ce refresh va donc se rafraîchir
+        refreshKey: 0,  // Comme la valeur change, le compute qui contient ce refresh va donc se rafraîchir, sinon l'état du panier ne va pas se rafraîchir
         cart: [
             {
                 id: 1,
